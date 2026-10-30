@@ -1,0 +1,17 @@
+# WorkBuddy / local tooling
+.workbuddy/
+.codex/
+
+# Personal / unpublished cases (kept locally only)
+其他/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
