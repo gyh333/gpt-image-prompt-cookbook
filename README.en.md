@@ -24,8 +24,8 @@ Battle-tested prompt recipes for image generation models — each one ships with
 | 12 | [Minimal Geometric Poster](12-%E6%9E%81%E7%AE%80%E5%87%A0%E4%BD%95%E6%B5%B7%E6%8A%A5/提示词.md) | Product → geometric-installation key visual | 5 |
 | 13 | [Restaurant Brand VI Kit](13-%E9%A4%90%E9%A5%AE%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97VI/提示词.md) | Brand name + category → touchpoint matrix board | 5 |
 | 14 | [Restaurant Menu Hero Poster](14-%E9%A4%90%E9%A5%AE%E6%96%B0%E5%93%81%E4%B8%BB%E6%89%93%E6%B5%B7%E6%8A%A5/提示词.md) | Dish photo → food hero explainer poster | 5 |
-| 15 | [Brand Visual Proposal](15-%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four proposal boards | 8 |
-| 16 | [Original IP Commercialization](16-%E5%8E%9F%E5%88%9BIP%E5%95%86%E5%93%81%E5%8C%96%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four boards + IP system | 12 |
+| 15 | [Brand Visual Proposal](15-%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four proposal boards (2 worked examples) | 16 |
+| 16 | [Original IP Commercialization](16-%E5%8E%9F%E5%88%9BIP%E5%95%86%E5%93%81%E5%8C%96%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four boards + IP system (3 worked examples) | 16 |
 | 17 | [Four-Season Streetwear · Women](17-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E5%A5%B3%E7%94%9F%E7%89%88/提示词.md) | Portrait → spring/summer/autumn/winter lookbooks | 8 |
 | 18 | [Four-Season Streetwear · Men](18-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E7%94%B7%E7%94%9F%E7%89%88/提示词.md) | Portrait → four menswear lookbooks | 4 |
 | 19 | [Nail Art Inspiration Board](19-AI%E7%BE%8E%E7%94%B2%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/提示词.md) | Theme / reference → ten-nail design board | 4 |
@@ -208,10 +208,11 @@ Four boards generated in sequence, not one four-panel grid: hero cover (sets the
 - Each board has one job, stated explicitly — including the note that board 4 must not repeat board 3's packaging showcase, the most common collision.
 - Application formats are mapped by industry: catering gets cups and bags, beauty gets bottles and gift boxes, tech gets website and app screens.
 - "Not a four-panel grid" has to be repeated at least three times, or the model happily crams all four into one image.
+- `实操/` carries two fully filled-in examples (Fruit Wave, Qingtian Xiaoguan) so you can see what boards 1–4 look like after the template is populated — far faster than tuning parameters from scratch.
 
 ## 16 · Original IP Commercialization Proposal
 
-A harder version of 15: same four boards, but board 2 must deliver a complete IP system. The folder also carries two full worked examples, from parameter to final image.
+A harder version of 15: same four boards, but board 2 must deliver a complete IP system. The folder also carries three full worked examples, from parameter to final image.
 
 <img src="16-%E5%8E%9F%E5%88%9BIP%E5%95%86%E5%93%81%E5%8C%96%E6%8F%90%E6%A1%88/%E6%A1%88%E4%BE%8B/1_1.jpg" width="380" alt="Original IP proposal sample">
 
@@ -219,7 +220,7 @@ A harder version of 15: same four boards, but board 2 must deliver a complete IP
 - Names the usual failure outright — "not just a logo, it needs IP presence" — then offers a light-IP route: badges, seals, hang tags, stamps, charms. You don't have to bolt on a cartoon mascot.
 - Cultural elements must be modernized and designed; the prompt explicitly forbids template guochao of auspicious clouds, dragon patterns and red-gold borders.
 - Translates vague briefs ("premium realism", "cultural elements", "not too cartoonish") into concrete rendering instructions instead of leaving them as slogans.
-- `实操/` holds two complete cases (Mid-Autumn desserts, Chaoshan beef balls) with parameterized prompts and their own outputs, so parameter differences can be compared directly.
+- `实操/` holds three complete cases (Mid-Autumn desserts, Chaoshan beef balls, fresh-fruit e-commerce) with parameterized prompts and their own outputs, so parameter differences can be compared directly.
 
 ## 17 · Four-Season Streetwear · Women
 
