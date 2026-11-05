@@ -23,6 +23,13 @@ Battle-tested prompt recipes for image generation models — each one ships with
 | 11 | [Facial Aesthetic Upgrade Report](11-AI%E4%BA%94%E5%AE%98%E7%BE%8E%E5%AD%A6%E5%8D%87%E7%BA%A7%E6%8A%A5%E5%91%8A/提示词.md) | Front portrait → six-zone notes + priority matrix | 2 |
 | 12 | [Minimal Geometric Poster](12-%E6%9E%81%E7%AE%80%E5%87%A0%E4%BD%95%E6%B5%B7%E6%8A%A5/提示词.md) | Product → geometric-installation key visual | 5 |
 | 13 | [Restaurant Brand VI Kit](13-%E9%A4%90%E9%A5%AE%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97VI/提示词.md) | Brand name + category → touchpoint matrix board | 5 |
+| 14 | [Restaurant Menu Hero Poster](14-%E9%A4%90%E9%A5%AE%E6%96%B0%E5%93%81%E4%B8%BB%E6%89%93%E6%B5%B7%E6%8A%A5/提示词.md) | Dish photo → food hero explainer poster | 5 |
+| 15 | [Brand Visual Proposal](15-%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four proposal boards | 8 |
+| 16 | [Original IP Commercialization](16-%E5%8E%9F%E5%88%9BIP%E5%95%86%E5%93%81%E5%8C%96%E6%8F%90%E6%A1%88/提示词.md) | Brand brief → four boards + IP system | 12 |
+| 17 | [Four-Season Streetwear · Women](17-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E5%A5%B3%E7%94%9F%E7%89%88/提示词.md) | Portrait → spring/summer/autumn/winter lookbooks | 8 |
+| 18 | [Four-Season Streetwear · Men](18-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E7%94%B7%E7%94%9F%E7%89%88/提示词.md) | Portrait → four menswear lookbooks | 4 |
+| 19 | [Nail Art Inspiration Board](19-AI%E7%BE%8E%E7%94%B2%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/提示词.md) | Theme / reference → ten-nail design board | 4 |
+| 20 | [Fashion Inspiration Board](20-AI%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/提示词.md) | Theme / reference → three-look styling board | 6 |
 
 ---
 
@@ -178,18 +185,103 @@ Brand name plus category in, a full touchpoint matrix out: tote bags, cups, boxe
 - Layout rule: large items anchor, medium items inform, small items complete. That's what keeps a mockup board from falling apart.
 - Every item must carry the same logo, color block and tagline; without that instruction the output reads as unrelated packaging photos.
 
+## 14 · Restaurant Menu Hero Poster
+
+A dish photo in, a 2:3 "food hero explainer" out: the dish dominates the center, ingredients run down the left, nutrition claims down the right, price + order button + platform hints at the bottom.
+
+<img src="14-%E9%A4%90%E9%A5%AE%E6%96%B0%E5%93%81%E4%B8%BB%E6%89%93%E6%B5%B7%E6%8A%A5/%E6%A1%88%E4%BE%8B/1-%E8%8B%A6%E7%93%9C%E6%9F%A0%E6%AA%AC%E6%B0%94%E6%B3%A1%E6%B0%B4.jpg" width="380" alt="Restaurant poster sample">
+
+**Prompt moves**
+- The uploaded dish is binding: no substituting another dish, no re-plating, only lighting, layering and commercial finish may improve. Blunt lines like "no ugly AI-looking food" do more than polite ones.
+- Seven fixed zones with a single reading path: brand → title → hero dish → ingredients → benefits → price → platform hints. That's why the layout never falls apart.
+- The footer gets its own localization rules: no "Follow Us", no Instagram logic, platform icons without repeated text labels, just 3–4 icons plus one search prompt line.
+- Left and right columns have a stated hierarchy — ingredient thumbnails and circular icons stay refined but never outrank the dish.
+
+## 15 · Brand Visual Proposal
+
+Four boards generated in sequence, not one four-panel grid: hero cover (sets the tone), identity system (how it's built), product and packaging (how it lands), campaign and space (how it behaves in the real world).
+
+<img src="15-%E5%93%81%E7%89%8C%E5%85%A8%E5%A5%97%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88/%E6%A1%88%E4%BE%8B/1_1-%E4%B8%BB%E8%A7%86%E8%A7%89%E5%B0%81%E9%9D%A2.jpg" width="380" alt="Brand visual proposal sample">
+
+**Prompt moves**
+- Forces the model to lock ten pieces of visual DNA before generating anything (tone, keywords, three colors, typography, graphic language, product presentation, IP, materials, overall mood). Skip that and the four images drift apart.
+- Each board has one job, stated explicitly — including the note that board 4 must not repeat board 3's packaging showcase, the most common collision.
+- Application formats are mapped by industry: catering gets cups and bags, beauty gets bottles and gift boxes, tech gets website and app screens.
+- "Not a four-panel grid" has to be repeated at least three times, or the model happily crams all four into one image.
+
+## 16 · Original IP Commercialization Proposal
+
+A harder version of 15: same four boards, but board 2 must deliver a complete IP system. The folder also carries two full worked examples, from parameter to final image.
+
+<img src="16-%E5%8E%9F%E5%88%9BIP%E5%95%86%E5%93%81%E5%8C%96%E6%8F%90%E6%A1%88/%E6%A1%88%E4%BE%8B/1_1.jpg" width="380" alt="Original IP proposal sample">
+
+**Prompt moves**
+- Names the usual failure outright — "not just a logo, it needs IP presence" — then offers a light-IP route: badges, seals, hang tags, stamps, charms. You don't have to bolt on a cartoon mascot.
+- Cultural elements must be modernized and designed; the prompt explicitly forbids template guochao of auspicious clouds, dragon patterns and red-gold borders.
+- Translates vague briefs ("premium realism", "cultural elements", "not too cartoonish") into concrete rendering instructions instead of leaving them as slogans.
+- `实操/` holds two complete cases (Mid-Autumn desserts, Chaoshan beef balls) with parameterized prompts and their own outputs, so parameter differences can be compared directly.
+
+## 17 · Four-Season Streetwear · Women
+
+One face, four seasonal logics: crisp spring, cool summer, brown-and-black autumn, high-contrast winter. Each board runs Before + Hero After + 5–6 lookbook looks + palette + outfit formulas.
+
+<img src="17-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E5%A5%B3%E7%94%9F%E7%89%88/%E6%A1%88%E4%BE%8B/1_1.jpg" width="380" alt="Four-season streetwear sample">
+
+**Prompt moves**
+- Clear positioning: it doesn't decide which season you belong to, it shows that all four seasonal logics work on the same person, and all four are wearable.
+- Looks dominate the frame, text stays under 30% — you must see the styling upgrade first and the palette second. That ratio is what keeps it from looking like a slide deck.
+- The "don'ts" are more specific than the "dos": no candy colors in spring, no all-pastel summer, no muddy earth tones in autumn, no salesperson coat in winter.
+- Every look lands on a concrete proportion move — cropped jacket, higher waistline, shoe shape, coat length — instead of just changing colors.
+
+## 18 · Four-Season Streetwear · Men
+
+The menswear counterpart: same four-season structure, but the improvement axis shifts to shoulder line, coat length, trouser drape, waist position and shoe weight.
+
+<img src="18-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E7%94%B7%E7%94%9F%E7%89%88/%E6%A1%88%E4%BE%8B/1.jpg" width="380" alt="Menswear guide sample">
+
+**Prompt moves**
+- A dedicated negative block kills the feminization risk: no skirts, heels, women's bags or women's makeup, and no idol-pretty softening. That's the biggest failure mode for menswear templates.
+- Proportion guidance is a checklist, not an adjective: clear shoulder line, structured coat, high waist, straight-leg trousers, weighted shoes that don't shorten the figure, no 50/50 split.
+- Separate accessory allowlists and blocklists (caps, beanies, sunglasses, silver chains, crossbody, derbies, loafers, boots) beat a vague "refined accessories".
+- Explicitly asks not to make the subject look younger or like a trainee idol — keep the real age, or the styling stops being believable.
+
+## 19 · AI Nail Art Inspiration Board
+
+A theme or reference in, a 4:3 proposal board out: inspiration source, extracted color/motif/finish, ten individually designed nails, on-hand preview, plus nail shape and occasion advice.
+
+<img src="19-AI%E7%BE%8E%E7%94%B2%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B/1-%E5%8D%83%E9%87%8C%E6%B1%9F%E5%B1%B1%E5%9B%BE.jpg" width="380" alt="Nail art board sample">
+
+**Prompt moves**
+- Breaks "inspiration translation" into four checkable layers: palette (3+2+1), keywords, motifs and finishes. With those four, "translation" stops being a buzzword.
+- All ten nails need a finger position, design name, one-line note and dominant technique — cohesive but rhythmic, never ten identical nails and never ten unrelated ones.
+- A dedicated on-hand preview section, explicitly "not a thumbnail", is where the whole board earns its credibility.
+- Allows a second image as a hand reference to match skin tone and hand shape; without one it generates generic hands.
+
+## 20 · AI Fashion Inspiration Board
+
+A theme or reference in, three complete looks out: Hero, Work and Date, backed by color/silhouette/fabric/detail extraction and a key-pieces breakdown.
+
+<img src="20-AI%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B/1-%E5%95%86%E9%9D%92%E9%93%9C%E9%A5%95%E9%A4%AE.jpg" width="380" alt="Fashion inspiration board sample">
+
+**Prompt moves**
+- The three looks have distinct jobs rather than sitting side by side: Hero for maximum expression, Work for maximum wearability, Date for maximum atmosphere. Clear roles are what create series coherence.
+- The reference image is inspiration only — copying its garments, poses or layout is explicitly banned. Without that line you get the reference photo with a different face.
+- The key-pieces section must state what each piece *does* (sharpens the silhouette, echoes the theme color, balances formal and modern), turning a mood board into an executable proposal.
+- Color, silhouette, fabric and detail are extracted as four separate dimensions, so the model can't reduce "inspiration" to a few adjectives.
+
 ---
 
 ## How to use
 
 1. Open a recipe's `提示词.md` and read it whole — the negative constraints at the end matter as much as the positives.
-2. Attach your own reference photo (01, 02, 03, 04, 06, 07, 08, 09, 10, 11 require one; 05, 12, 13 only need a topic or brand brief).
+2. Attach your own reference photo (01, 02, 03, 04, 06, 07, 08, 09, 10, 11, 14, 17, 18 require one; 05, 12, 13, 15, 16, 19, 20 only need a topic or brand brief).
 3. Replace the topic / parameters, keep the structure. Deleting the "avoid" section is the fastest way to get generic output.
-4. Expect 1–3 retries on text-heavy recipes (01, 04, 05 and the report series 07–11) — small typos are normal.
+4. Expect 1–3 retries on text-heavy recipes (01, 04, 05, the report series 07–11 and brand series 14–16) — small typos are normal.
+5. Recipes marked "4 boards" or "three-image series" must be generated one at a time; asking for all of them at once usually produces a single collage or cross-contaminated results.
 
 ## Notes
 
 - All samples are AI-generated. People in them are not real, and no third-party photos are included.
-- Recipes 07–11 are the "image consultant report" series, and every one of them insists on preserving the subject's identity instead of swapping the face. Use these templates on your own photos only.
+- Recipes 07–11 and 17–18 are the "image consultant / styling proposal" series, and every one of them insists on preserving the subject's identity instead of swapping the face. Use these templates on your own photos only.
 - Prompts are written in Chinese. That is deliberate: for typography- and layout-heavy constraints, Chinese phrasing tends to be more precise than a translated English prompt.
 - Fonts and handwritten text are the least reliable part of current models — check every label before publishing.
