@@ -30,6 +30,7 @@ Battle-tested prompt recipes for image generation models — each one ships with
 | 18 | [Four-Season Streetwear · Men](18-%E3%80%8A%E5%9B%9B%E5%AD%A3%E6%BD%AE%E7%89%8C%E7%A9%BF%E6%90%AD%E6%8C%87%E5%8D%97%E3%80%8B%E7%94%B7%E7%94%9F%E7%89%88/提示词.md) | Portrait → four menswear lookbooks | 4 |
 | 19 | [Nail Art Inspiration Board](19-AI%E7%BE%8E%E7%94%B2%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/提示词.md) | Theme / reference → ten-nail design board | 4 |
 | 20 | [Fashion Inspiration Board](20-AI%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD%E7%81%B5%E6%84%9F%E6%96%B9%E6%A1%88/提示词.md) | Theme / reference → three-look styling board | 6 |
+| 21 | [Korean Indie Art Poster](21-%E9%9F%A9%E5%9B%BD%E9%A3%8E%E6%A0%BC%E7%8B%AC%E7%AB%8B%E8%89%BA%E6%9C%AF%E6%B5%B7%E6%8A%A5/提示词.md) | Travel photo → split photo + illustration poster | 6 |
 
 ---
 
@@ -270,12 +271,38 @@ A theme or reference in, three complete looks out: Hero, Work and Date, backed b
 - The key-pieces section must state what each piece *does* (sharpens the silhouette, echoes the theme color, balances formal and modern), turning a mood board into an executable proposal.
 - Color, silhouette, fabric and detail are extracted as four separate dimensions, so the model can't reduce "inspiration" to a few adjectives.
 
+## 21 · Korean Indie Art Poster
+
+Another 3:4 split at 50/50 — but the lower half is a clumsy, playful Korean-style flat illustration instead of photography: rounded geometry, solid color blocks and rough hand-drawn outlines redraw the same moment, topped with English typography and editorial micro-copy.
+
+<img src="21-%E9%9F%A9%E5%9B%BD%E9%A3%8E%E6%A0%BC%E7%8B%AC%E7%AB%8B%E8%89%BA%E6%9C%AF%E6%B5%B7%E6%8A%A5/%E6%A1%88%E4%BE%8B/1.jpg" width="380" alt="Korean indie art poster sample">
+
+**Prompt moves**
+- The style is defined by its flaws: wobbly outlines, uneven thickness, broken edges, imperfect curves, slightly exaggerated shapes, deliberate misalignment. Ask for "cartoon illustration" and you get clean, smooth, generic output.
+- Gradients, realistic shadows and muddy grays are banned outright; only high-purity flat color remains. That is what separates an indie magazine feel from vector clip art.
+- Typography is split into five roles — a 2–4 word headline, a sub-line, place/year, a 1–2 line poetic note, and a corner series number like `No.01` — plus a rule that place and year must never be invented.
+- Same hard rule as recipe 02: one photo, one poster, no collage. Added on top: the lower illustration must visibly derive from the upper photo, or the two halves stop belonging to each other.
+
+---
+
+## Other material
+
+`提示词指令/` holds five complete instruction documents in .docx form. No sample images — they are meant to be dropped in as system prompts:
+
+| Document | Purpose |
+| --- | --- |
+| 01 Wedding photo reverse-engineering | Rebuild scene and poses from a reference frame, reusable across subjects |
+| 02 Realistic portrait three-view | Identity lock plus three-angle consistency |
+| 03 Nail salon Singles' Day poster | Industry promo layout with pricing structure |
+| 04 Pet GIF sticker pack | 32 independent stickers, batch production |
+| 05 Pet WeChat sticker album | 24 stickers plus WeChat sticker platform submission assets |
+
 ---
 
 ## How to use
 
 1. Open a recipe's `提示词.md` and read it whole — the negative constraints at the end matter as much as the positives.
-2. Attach your own reference photo (01, 02, 03, 04, 06, 07, 08, 09, 10, 11, 14, 17, 18 require one; 05, 12, 13, 15, 16, 19, 20 only need a topic or brand brief).
+2. Attach your own reference photo (01, 02, 03, 04, 06, 07, 08, 09, 10, 11, 14, 17, 18, 21 require one; 05, 12, 13, 15, 16, 19, 20 only need a topic or brand brief).
 3. Replace the topic / parameters, keep the structure. Deleting the "avoid" section is the fastest way to get generic output.
 4. Expect 1–3 retries on text-heavy recipes (01, 04, 05, the report series 07–11 and brand series 14–16) — small typos are normal.
 5. Recipes marked "4 boards" or "three-image series" must be generated one at a time; asking for all of them at once usually produces a single collage or cross-contaminated results.
