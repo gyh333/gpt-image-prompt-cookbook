@@ -287,7 +287,7 @@ Another 3:4 split at 50/50 — but the lower half is a clumsy, playful Korean-st
 
 ## Other material
 
-`提示词指令/` holds five complete instruction documents in .docx form. No sample images — they are meant to be dropped in as system prompts:
+`提示词指令/` holds six complete instruction documents in .docx form. No sample images — they are meant to be dropped in as system prompts:
 
 | Document | Purpose |
 | --- | --- |
@@ -296,6 +296,7 @@ Another 3:4 split at 50/50 — but the lower half is a clumsy, playful Korean-st
 | 03 Nail salon Singles' Day poster | Industry promo layout with pricing structure |
 | 04 Pet GIF sticker pack | 32 independent stickers, batch production |
 | 05 Pet WeChat sticker album | 24 stickers plus WeChat sticker platform submission assets |
+| 06 Wedding portrait book (100 sets / 1000 shots) | 100 styles × 10 shots each, one image per prompt, real identity and proportions locked |
 
 ---
 
